@@ -1,0 +1,104 @@
+:root {
+  /* hsl (fallback color) */
+  --bg-dark: hsl(224 58% 2%);
+  --bg: hsl(219 38% 5%);
+  --bg-light: hsl(218 23% 9%);
+  --text: hsl(218 100% 97%);
+  --text-muted: hsl(218 20% 71%);
+  --highlight: hsl(218 13% 41%);
+  --border: hsl(218 17% 30%);
+  --border-muted: hsl(219 24% 19%);
+  --primary: hsl(219 78% 75%);
+  --secondary: hsl(39 54% 61%);
+  --danger: hsl(9 26% 64%);
+  --warning: hsl(52 19% 57%);
+  --success: hsl(146 17% 59%);
+  --info: hsl(217 28% 65%);
+  /* oklch */
+  --bg-dark: oklch(0.12 0.015 262);
+  --bg: oklch(0.15 0.015 262);
+  --bg-light: oklch(0.2 0.015 262);
+  --text: oklch(0.96 0.03 262);
+  --text-muted: oklch(0.76 0.03 262);
+  --highlight: oklch(0.5 0.03 262);
+  --border: oklch(0.4 0.03 262);
+  --border-muted: oklch(0.3 0.03 262);
+  --primary: oklch(0.76 0.1 262);
+  --secondary: oklch(0.76 0.1 82);
+  --danger: oklch(0.7 0.05 30);
+  --warning: oklch(0.7 0.05 100);
+  --success: oklch(0.7 0.05 160);
+  --info: oklch(0.7 0.05 260);
+
+  --gradient: linear-gradient(0deg, var(--bg) 95%, var(--bg-light));
+  --gradient-hover: linear-gradient(0deg, var(--bg), var(--bg-light));
+  --border-card: solid 1px var(--border);
+  --shadow: 0px 2px 2px oklch(0 0 0 / 0.2), 0px 4px 4px oklch(0 0 0 / 0.1);
+}
+
+body.light {
+  /* hsl (fallback color) */
+  --bg-dark: hsl(218 33% 91%);
+  --bg: hsl(218 74% 96%);
+  --bg-light: hsl(218 100% 100%);
+  --text: hsl(221 65% 6%);
+  --text-muted: hsl(218 17% 30%);
+  --highlight: hsl(218 100% 100%);
+  --border: hsl(218 12% 52%);
+  --border-muted: hsl(218 16% 64%);
+  --primary: hsl(219 51% 32%);
+  --secondary: hsl(43 100% 15%);
+  --danger: hsl(9 21% 41%);
+  --warning: hsl(52 23% 34%);
+  --success: hsl(147 19% 36%);
+  --info: hsl(217 22% 41%);
+  /* oklch */
+  --bg-dark: oklch(0.92 0.015 262);
+  --bg: oklch(0.96 0.015 262);
+  --bg-light: oklch(1 0.015 262);
+  --text: oklch(0.15 0.03 262);
+  --text-muted: oklch(0.4 0.03 262);
+  --highlight: oklch(1 0.03 262);
+  --border: oklch(0.6 0.03 262);
+  --border-muted: oklch(0.7 0.03 262);
+  --primary: oklch(0.4 0.1 262);
+  --secondary: oklch(0.4 0.1 82);
+  --danger: oklch(0.5 0.05 30);
+  --warning: oklch(0.5 0.05 100);
+  --success: oklch(0.5 0.05 160);
+  --info: oklch(0.5 0.05 260);
+
+  --gradient: linear-gradient(0deg, var(--bg) 95%, var(--bg-light));
+  --gradient-hover: linear-gradient(0deg, var(--bg), var(--bg-light));
+  --border-card: solid 1px var(--bg);
+  --shadow: 0px 2px 2px oklch(0 0 0 / 0.2), 0px 4px 4px oklch(0 0 0 / 0.1);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-muted);
+
+  /* date picker */
+  .dp__main {
+    --dp-border-radius: 10px;
+    --dp-font-size: 18px;
+    --dp-preview-font-size: 0.8em;
+  }
+  .dp__theme_dark {
+    --dp-background-color: var(--bg-light);
+    --dp-text-color: var(--text-muted);
+    --dp-icon-color: var(--text-muted);
+    --dp-border-color: var(--border);
+    --dp-menu-border-color: var(--border-card);
+    --dp-border-color-hover: var(--border-card);
+    --dp-border-color-focus: var(--border-card);
+  }
+  .dp__theme_light {
+    --dp-background-color: var(--bg-light);
+    --dp-text-color: var(--text-muted);
+    --dp-icon-color: var(--text-muted);
+    --dp-border-color: var(--border-card);
+    --dp-menu-border-color: var(--border-card);
+    --dp-border-color-hover: var(--border-card);
+  }
+}

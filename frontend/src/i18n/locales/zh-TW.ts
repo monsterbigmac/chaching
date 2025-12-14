@@ -1,0 +1,32 @@
+export default {
+  financialClassifications: {
+    Food: '食物',
+    Transport: '交通',
+    Leisure: '休閒',
+    Other: '其他',
+    Shopping: '購物',
+    Bill: '帳單',
+    Housing: '住房',
+    Question: '?',
+  },
+  general: {
+    submit: '儲存',
+    delete: '刪除',
+    description: '明細',
+    amount: '金額',
+    index: '列表',
+    edit: '編輯',
+  },
+  notifications: {
+    success: '成功',
+    error: '錯誤',
+    warning: '警告',
+    info: '資訊',
+    operationSuccessful: '操作成功',
+    operationFailed: '操作失敗',
+    saved: '儲存成功',
+    deleted: '刪除成功',
+    updated: '更新成功',
+    created: '新增成功',
+  },
+}

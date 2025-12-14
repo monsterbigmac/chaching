@@ -1,0 +1,48 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Frontend
+frontend/node_modules
+frontend/dist
+frontend/.env.local
+frontend/.env.*.local
+frontend/coverage
+
+# Backend (Gradle)
+.gradle
+build
+bin
+out
+*.class
+*.jar
+*.war
+
+# Documentation
+*.md
+README.md
+CLAUDE.md
+LICENSE
+
+# Docker
+.dockerignore
+docker-compose-example.yml.yml
+docker-compose-prod.yml
+Dockerfile.prod.backend
+Dockerfile.prod.frontend
+
+# Logs
+*.log
+logs
+
+# OS
+.DS_Store
+Thumbs.db

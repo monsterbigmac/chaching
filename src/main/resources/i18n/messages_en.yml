@@ -1,0 +1,11 @@
+validation:
+  amount:
+    notNull: Amount is required
+  cashFlowType:
+    notNull: Cash flow type is required
+  description:
+    notBlank: Description is required
+  recordDate:
+    notNull: Record date is required
+  classificationId:
+    notNull: Classification is required

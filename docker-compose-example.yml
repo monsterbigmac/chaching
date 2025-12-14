@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod.frontend
+    ports:
+      - "80:80"
+    restart: unless-stopped
+  backend:
+    build:
+      context: .
+      dockerfile: DockerFile.prod.backend
+    environment:
+      SPRING_PROFILES_ACTIVE:
+      SPRING_DATASOURCE_URL:
+      SPRING_DATASOURCE_USERNAME:
+      SPRING_DATASOURCE_PASSWORD:
+    depends_on:
+      - db
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB:
+      POSTGRES_USER:
+      POSTGRES_PASSWORD:
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

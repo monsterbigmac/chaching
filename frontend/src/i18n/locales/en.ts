@@ -1,0 +1,32 @@
+export default {
+  financialClassifications: {
+    Food: 'Food',
+    Transport: 'Transport',
+    Leisure: 'Leisure',
+    Other: 'Other',
+    Shopping: 'Shopping',
+    Bill: 'Bill',
+    Housing: 'Housing',
+    Question: '?',
+  },
+  general: {
+    submit: 'Submit',
+    delete: 'delete',
+    description: 'Description',
+    amount: 'Amount',
+    index: 'Index',
+    edit: 'Edit',
+  },
+  notifications: {
+    success: 'Success',
+    error: 'Error',
+    warning: 'Warning',
+    info: 'Info',
+    operationSuccessful: 'Operation completed successfully',
+    operationFailed: 'Operation failed',
+    saved: 'Saved successfully',
+    deleted: 'Deleted successfully',
+    updated: 'Updated successfully',
+    created: 'Created successfully',
+  },
+}

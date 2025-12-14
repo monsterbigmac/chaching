@@ -1,0 +1,11 @@
+validation:
+  amount:
+    notNull: 金額為必填項目
+  cashFlowType:
+    notNull: 支出或收入為必填項目
+  description:
+    notBlank: 明細為必填項目
+  recordDate:
+    notNull: 日期為必填項目
+  classificationId:
+    notNull: 分類為必填項目

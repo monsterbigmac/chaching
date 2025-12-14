@@ -1,0 +1,8 @@
+FROM gradle:9.2-jdk21-alpine AS backend-builder
+WORKDIR /app/backend
+COPY . .
+RUN gradle build --no-daemon -x test
+
+FROM eclipse-temurin:21-jre
+COPY --from=backend-builder /app/backend/build/libs/chaching-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
