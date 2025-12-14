@@ -87,7 +87,6 @@ public class SecurityConfig {
 
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
-        System.out.println("aaaaaaaaa" + corsConfig.getCorsAllowedOrigins());
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(corsConfig.getCorsAllowedOrigins());
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PATCH", "DELETE"));
